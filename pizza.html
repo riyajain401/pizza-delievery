@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Pizza Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pizza Delivery</h1>
+    <p>Hot & Fresh at Your Doorstep</p>
+  </header>
+
+  <main>
+    <h2>Menu</h2>
+    <div class="pizza">
+      <h3>Margherita</h3>
+      <p>Classic cheese & tomato</p>
+      <p>Price: ₹199</p>
+      <button class="btn" onclick="addToCart('Margherita',199)">Add to Cart</button>
+    </div>
+
+    <div class="pizza">
+      <h3>Farmhouse</h3>
+      <p>Veggies & cheese</p>
+      <p>Price: ₹279</p>
+      <button class="btn" onclick="addToCart('Farmhouse',279)">Add to Cart</button>
+    </div>
+
+    <div class="pizza">
+      <h3>Pepperoni</h3>
+      <p>Pepperoni & cheese</p>
+      <p>Price: ₹349</p>
+      <button class="btn" onclick="addToCart('Pepperoni',349)">Add to Cart</button>
+    </div>
+    <div class="pizza">
+      <h3>Corn Chesse pizza.</h3>
+      <p>Corn Chesse pizza.</p>
+      <p>Price: ₹399</p>
+      <button class="btn" onclick="addToCart('Corn Chesse pizza',399)">Add to Cart</button>
+    </div>
+    <div class="pizza">
+      <h3>Panner Makhani</h3>
+      <p>Panner Makhani.</p>
+      <p>Price: ₹449</p>
+      <button class="btn" onclick="addToCart('Panner Makhani.',449)">Add to Cart</button>
+    </div>
+    <div class="pizza">
+      <h3>Creamy Tomato Pasta pizza.</h3>
+      <p>Creamy Tomato Pasta pizza.</p>
+      <p>Price: ₹459</p>
+      <button class="btn" onclick="addToCart('Creamy Tomato Pasta pizza.',459)">Add to Cart</button>
+    </div>
+<div class="pizza">
+      <h3>MEXICAN GREEN WAVE.</h3>
+      <p>MEXICAN GREEN WAVE.</p>
+      <p>Price: ₹659</p>
+      <button class="btn" onclick="addToCart('MEXICAN GREEN WAVE.',659)">Add to Cart</button>
+    </div>
+    <div class="pizza">
+      <h3>Panner Tikka Pizza.</h3>
+      <p>Panner Tikka Pizza.</p>
+      <p>Price: ₹699</p>
+      <button class="btn" onclick="addToCart('Panner Tikka Pizza.',459)">Add to Cart</button>
+    </div>
+     <div class="pizza">
+      <h3>Peppy Panner.</h3>
+      <p>Peppy Panner.</p>
+      <p>Price: ₹470</p>
+      <button class="btn" onclick="addToCart('Peppy panner.',470)">Add to Cart</button>
+    </div>
+    <h3> Maharaja's Pizza.</h3>
+     <div class="pizza">
+      <h3>Maharaja VEG  Pizza.</h3>
+      <p>Maharaja VEG Pizza.</p>
+      <p>12 slices .</p>
+      <p>Price: ₹999</p>
+      <button class="btn" onclick="addToCart('Maharaja VEG Pizza.',999)">Add to Cart</button>
+    </div>
+    <div class="pizza">
+      <h3>Maharaja Panner Pizza.</h3>
+      <p>Maharaja Panner Pizza.</p>
+      <p>12 slices</p>
+      <p>Price: ₹999</p>
+      <button class="btn" onclick="addToCart('Maharaja VEG Pizza.',999)">Add to Cart</button>
+    </div>
+   
+    <h2>GARLIC BREAD.</h2>
+    <div class="Garlic">
+      <h3>veg garlic bread.</h3>
+      <p>veg garlic bread.</p>
+      <p>Price: ₹470</p>
+      <button class="btn" onclick="addToCart('veg garlic bread.',470)">Add to Cart</button>
+    </div>
+    <div class="Garlic">
+      <h3>Panner garlic bread.</h3>
+      <p>Panner garlic bread.</p>
+      <p>Price: ₹500</p>
+      <button class="btn" onclick="addToCart('Panner garlic bread.',500)">Add to Cart</button>
+    </div>
+    <div class="Garlic">
+      <h3>Stuffed garlic bread.</h3>
+      <p>Stuffed garlic bread.</p>
+      <p>Price: ₹470</p>
+      <button class="btn" onclick="addToCart('Stuffed garlic bread.',470)">Add to Cart</button>
+    </div>
+    <h2>DESSERTS</h2>
+     <div class="dessert">
+      <h3>RED VELVET LAVA CAKE.</h3>
+      <p>RED VELVET LAVA CAKE.</p>
+      <p>Price: ₹299</p>
+      <button class="btn" onclick="addToCart('RED VELVET LAVA CAKE',299)">Add to Cart</button>
+    </div>
+        <div class="dessert">
+      <h3>CHOCO LAVA CAKE.</h3>
+      <p>CHOCO LAVA CAKE.</p>
+      <p>Price: ₹299</p>
+      <button class="btn" onclick="addToCart('CHOCO LAVA CAKE',299)">Add to Cart</button>
+    </div>
+
+         <div class="dessert">
+      <h3>BUTTERSCOTCH MOUSSE CAKE.</h3>
+      <p> BUTTERSCOTCH MOUSSE CAKE.</p>
+      <p>Price: ₹399</p>
+      <button class="btn" onclick="addToCart('BUTTERSCOTCH MOUSSE CAKE',399)">Add to Cart</button>
+    </div>
+      <div class="dessert">
+      <h3>BROWNIE FANTASY.</h3>
+      <p>BROWNIE FANTASY.</p>
+      <p>Price: ₹99</p>
+      <button class="btn" onclick="addToCart('BROWNIE FANTASY',99)">Add to Cart</button>
+    </div>
+    <div id="cart">
+      <h2>Your Cart</h2>
+      <div id="cartItems">No items yet.</div>
+      <p><strong>Total:</strong> ₹<span id="total">0</span></p>
+      <button class="btn" onclick="checkout()" id="checkoutBtn" disabled>Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pizza Delivery</p>
+  </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
