@@ -91,3 +91,34 @@ margin: 0 0 5px;
          margin: 5px 0; 
     color: #555;
      }
+.cart-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:10px 0;
+}
+
+#toast{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:green;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.dark{
+background:#222;
+color:white;
+}
+
+.dark .pizza,
+.dark .Garlic,
+.dark .dessert,
+.dark #cart{
+background:#333;
+color:white;
+}
