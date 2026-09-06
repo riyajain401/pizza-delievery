@@ -1,6 +1,12 @@
 let cart = [];
 let totalItems = 0;
 
+window.addEventListener("load", function () {
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+    }, 2000);
+});
+
 // Add Item
 function addToCart(name, price) {
     cart.push({ name, price });
