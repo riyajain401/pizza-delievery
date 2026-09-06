@@ -4,14 +4,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Simple Pizza Delivery</title>
+  <title>Pizza Delight</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="loader" id="loader">
+        <div class="loader-content">
+            <i class="fas fa-utensils loader-icon"></i>
+            <img src="https://static.vecteezy.com/system/resources/previews/027/740/016/large_2x/modern-pizza-logo-design-template-with-creative-time-concept-vector.jpg" alt="Pizza delight" Logo>
+            <p> loading Deliciousness...</p>
+        </div>
+    </div>
+
   <header>
-    <h1>Pizza Delivery</h1>
+    <h1>Pizza Delight</h1>
     <p>Hot & Fresh at Your Doorstep</p>
-    <h2>🛒 Cart (<span id="cartCount">0</span>)</h2>
+    <h2 class="hello">🛒 Cart (<span id="cartCount">0</span>)</h2>
   </header>
 
   <main>
@@ -143,8 +151,9 @@ onkeyup="searchPizza()">
       <div id="cartItems">No items yet.</div>
       <p><strong>Total:</strong> ₹<span id="total">0</span></p>
       <button class="btn" onclick="checkout()" id="checkoutBtn" disabled>Checkout</button>
-    </div
-      <div id="toast"></div>
+
+    </div>
+        <div id="toast"></div>
   </main>
 
   <footer>
